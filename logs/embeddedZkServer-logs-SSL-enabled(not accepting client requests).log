@@ -1,0 +1,69 @@
+raul@ignatius:~/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT$ ./bin/zookeeper-test true 2281 /home/raul/Documents/workspace/mine/pravega/config/server.keystore.jks 1111_aaaa /home/raul/Documents/workspace/mine/pravega/config/client.truststore.jks 1111_aaaa
+Expected parameters secureZK [true|false] zkPort [int] zkKeyStore [path to keystore]zkKeyStorePasswd [keystore password] zkTrustStore [path to truststore] zkTrustStorePasswd [trustore password]
+Parameters for the ZooKeeper server:
+secureZK: true
+zkPort: 2281
+zkKeyStore: /home/raul/Documents/workspace/mine/pravega/config/server.keystore.jks
+zkKeyStorePasswd: 1111_aaaa
+zkTrustStore: /home/raul/Documents/workspace/mine/pravega/config/client.truststore.jks
+zkTrustStorePasswd: 1111_aaaa
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:zookeeper.version=3.5.5-9872e7efe7b1cad61b8db16382260dda1f63e40e, built on 04/25/2019 14:06 GMT
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:host.name=ignatius
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.version=1.8.0_212
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.vendor=Oracle Corporation
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.class.path=/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/zookeeper-test-1.0-SNAPSHOT.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/lombok-1.18.4.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/curator-recipes-4.0.1.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/curator-framework-4.0.1.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-handler-4.1.30.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-codec-4.1.30.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-transport-4.1.30.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/curator-client-4.0.1.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/guava-27.0.1-jre.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-tcnative-boringssl-static-2.0.17.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/commons-io-2.6.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/slf4j-simple-1.7.25.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-buffer-4.1.30.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-resolver-4.1.30.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/failureaccess-1.0.1.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/jsr305-3.0.2.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/checker-qual-2.5.2.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/error_prone_annotations-2.2.0.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/j2objc-annotations-1.1.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/animal-sniffer-annotations-1.17.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/zookeeper-3.5.5.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/slf4j-api-1.7.25.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-common-4.1.30.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/zookeeper-jute-3.5.5.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/audience-annotations-0.5.0.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/netty-all-4.1.30.Final.jar:/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT/lib/log4j-1.2.17.jar
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.io.tmpdir=/tmp
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.compiler=<NA>
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.name=Linux
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.arch=amd64
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.version=4.18.0-18-generic
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.name=raul
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.home=/home/raul
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.dir=/home/raul/Documents/workspace/mine/curator-issue/zookeeper-test/build/distributions/zookeeper-test-1.0-SNAPSHOT
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.memory.free=144MB
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.memory.max=2176MB
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.memory.total=148MB
+[main] INFO org.apache.zookeeper.server.ZKDatabase - zookeeper.snapshotSizeFactor = 0.33
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - minSessionTimeout set to 6000
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - maxSessionTimeout set to 60000
+[main] INFO org.apache.zookeeper.server.ZooKeeperServer - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /tmp/zookeeper3626997853504951225inproc/version-2 snapdir /tmp/zookeeper3626997853504951225inproc/version-2
+[main] INFO org.apache.zookeeper.common.X509Util - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+[main] INFO org.apache.zookeeper.server.ServerCnxnFactory - Using org.apache.zookeeper.server.NettyServerCnxnFactory as server connection factory
+[main] INFO io.zookeepertest.ZooKeeperServiceRunner - Starting Zookeeper server at localhost:2281 ...
+[main] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - binding to port localhost/127.0.0.1:2281
+[main] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - bound to port 2281
+[main] INFO org.apache.zookeeper.server.persistence.FileTxnSnapLog - Snapshotting: 0x0 to /tmp/zookeeper3626997853504951225inproc/version-2/snapshot.0
+[main] INFO org.apache.zookeeper.server.persistence.FileTxnSnapLog - Snapshotting: 0x0 to /tmp/zookeeper3626997853504951225inproc/version-2/snapshot.0
+[epollEventLoopGroup-4-1] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - SSL handler added for channel: [id: 0x1737fc00, L:/127.0.0.1:2281 - R:/127.0.0.1:49150]
+[epollEventLoopGroup-4-1] ERROR org.apache.zookeeper.server.NettyServerCnxnFactory - Auth provider not found: x509
+[epollEventLoopGroup-4-1] INFO org.apache.zookeeper.server.command.FourLetterCommands - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, -720899=telnet close, 2003003507=wchs, 2003003504=wchp, 1684632179=dirs, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+[epollEventLoopGroup-4-1] INFO org.apache.zookeeper.server.command.FourLetterCommands - The list of enabled four letter word commands is : [[wchs, stat, wchp, dirs, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, telnet close, crst, cons]]
+[epollEventLoopGroup-4-1] INFO org.apache.zookeeper.server.NettyServerCnxn - Processing stat command from /127.0.0.1:49150
+[epollEventLoopGroup-4-1] INFO org.apache.zookeeper.server.command.AbstractFourLetterCommand - Stat command output
+[main] INFO io.zookeepertest.ZooKeeperServiceRunner - Server UP
+clientPort=-1
+secureClientPort=2281
+dataDir=/tmp/zookeeper3626997853504951225inproc/version-2
+dataDirSize=424
+dataLogDir=/tmp/zookeeper3626997853504951225inproc/version-2
+dataLogSize=424
+tickTime=3000
+maxClientCnxns=1000
+minSessionTimeout=6000
+maxSessionTimeout=60000
+serverId=0
+
+
+[epollEventLoopGroup-4-2] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - SSL handler added for channel: [id: 0x707d565f, L:/127.0.0.1:2281 - R:/127.0.0.1:49152]
+[epollEventLoopGroup-4-2] ERROR org.apache.zookeeper.server.NettyServerCnxnFactory - Auth provider not found: x509
+[SyncThread:0] INFO org.apache.zookeeper.server.persistence.FileTxnLog - Creating new log file: log.1
+[epollEventLoopGroup-4-3] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - SSL handler added for channel: [id: 0x22a2b6a2, L:/127.0.0.1:2281 - R:/127.0.0.1:49154]
+[epollEventLoopGroup-4-3] ERROR org.apache.zookeeper.server.NettyServerCnxnFactory - Auth provider not found: x509
+[epollEventLoopGroup-4-4] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - SSL handler added for channel: [id: 0x55efdb61, L:/127.0.0.1:2281 - R:/127.0.0.1:49156]
+[epollEventLoopGroup-4-4] ERROR org.apache.zookeeper.server.NettyServerCnxnFactory - Auth provider not found: x509
+[epollEventLoopGroup-4-1] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - SSL handler added for channel: [id: 0xb7c9547e, L:/127.0.0.1:2281 - R:/127.0.0.1:49160]
+[epollEventLoopGroup-4-1] ERROR org.apache.zookeeper.server.NettyServerCnxnFactory - Auth provider not found: x509
+[epollEventLoopGroup-4-2] INFO org.apache.zookeeper.server.NettyServerCnxnFactory - SSL handler added for channel: [id: 0xb458a318, L:/127.0.0.1:2281 - R:/127.0.0.1:49162]
+[epollEventLoopGroup-4-2] ERROR org.apache.zookeeper.server.NettyServerCnxnFactory - Auth provider not found: x509

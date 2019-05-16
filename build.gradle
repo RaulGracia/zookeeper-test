@@ -1,0 +1,58 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+group 'zookeeper-test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        //failOnVersionConflict()
+        force "org.slf4j:slf4j-api:" + slf4jApiVersion
+        force "org.apache.curator:curator-framework:" + apacheCuratorVersion
+        force "com.google.guava:guava:" + guavaVersion
+        force "org.apache.zookeeper:zookeeper:" + apacheZookeeperVersion
+        force "io.netty:netty-transport:"+ nettyVersion
+        force "io.netty:netty-handler:" + nettyVersion
+        force "io.netty:netty-transport-native-epoll:" + nettyVersion
+        force "io.netty:netty-all:" + nettyVersion
+        force "io.netty:netty-tcnative-boringssl-static:" + nettyBoringSSLVersion
+        dependencySubstitution {
+            substitute module("javax.ws.rs:jsr311-api") with module("javax.ws.rs:javax.ws.rs-api:" + javaxwsrsApiVersion)
+        }
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.projectlombok:lombok:' + lombokVersion
+    compile group: 'org.apache.curator', name: 'curator-recipes', version: apacheCuratorVersion
+    compile group: 'org.apache.curator', name: 'curator-framework', version: apacheCuratorVersion
+    compile group: 'io.netty', name: 'netty-transport', version: nettyVersion
+    compile group: 'io.netty', name: 'netty-handler', version: nettyVersion
+    compile group: 'com.google.guava', name: 'guava', version: guavaVersion
+    compile group: 'io.netty', name: 'netty-tcnative-boringssl-static', version: nettyBoringSSLVersion
+    compile group: 'commons-io', name: 'commons-io', version: commonsioVersion
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: slf4jApiVersion
+}
+
+mainClassName = "io.zookeepertest.ZooKeeperServiceRunner"
+startScripts {
+    doLast {
+        unixScript.text = unixScript.text.replace('SERVER_APP_HOME', '\$APP_HOME')
+        windowsScript.text = windowsScript.text.replace('SERVER_APP_HOME', '%~dp0..')
+    }
+}
+
+
